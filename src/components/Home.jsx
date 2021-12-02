@@ -26,11 +26,13 @@ const Auth = () => {
 function Home() {
   return (
     <div className="home">
+        
       <Heading />
       {localStorage.getItem("token")  ? (
         <>
+        
           <Button
-            href="/ready"
+          href='/ready'
             className="take-test-button"
             variant="outlined"
             size="large"
@@ -38,7 +40,7 @@ function Home() {
           >
             Take Test
           </Button>
-
+  
           <Carousel_domain />
         </>
       ) : (

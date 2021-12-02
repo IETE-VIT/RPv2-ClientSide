@@ -2,9 +2,7 @@
     width: 80vw !important;
 }
 
-.circle-card{
-    
-}
+
 .card-img{
     border-radius: 50%;
     height: 200px;
@@ -24,9 +22,9 @@
     width: 85vw;
    
 }
-.slick-next{
+/* .slick-next{
     left: 94% !important;
-}
+} */
 .slick-prev{
     left: 0 !important;
 }
@@ -75,4 +73,24 @@
 .css-1ami7lv-MuiTimelineConnector-root{
     background-color: #14CC7F !important;
     height: 50px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .Carousel-outer-div{
+        margin-top: 30%;
+        width: 70vw;
+        overflow: hidden;
+    
+      }
+      .carousel-heading{
+        font-size: 2.5rem;
+      }
+      .slick-next{
+        left: 78% !important;
+      }
+      .card-img{
+        height: 150px;
+        width: 150px;
+      }
 }

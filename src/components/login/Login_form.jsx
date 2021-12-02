@@ -40,7 +40,7 @@ const Login_form = (props) => {
                 onChange={handleChange}
                 value={values ? values.email : ""}
               />
-              {errors.email && <p>{errors.email}</p>}
+              {/* {errors.email && <p>{errors.email}</p>} */}
             </p>
             <p>
               <span className="input-label">Password</span>
@@ -53,7 +53,7 @@ const Login_form = (props) => {
                 onChange={handleChange}
                 value={values ? values.password : ""}
               />
-              {errors.password && <p>{errors.password}</p>}
+              {/* {errors.password && <p>{errors.password}</p>} */}
             </p>
             <p>
               <input

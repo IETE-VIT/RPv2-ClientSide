@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React,{useState} from "react";
 import {
   Drawer as MUIDrawer,
   ListItem,
@@ -19,32 +19,49 @@ import Wait_C from "../images/wait-green.svg";
 import Info from "../images/info-grey.svg";
 import Info_C from '../images/info-green.svg';
 import { withRouter } from "react-router-dom";
+import { createTheme } from "@mui/material";
 
-const useStyles = makeStyles({
+
+const useStyles = makeStyles( () => ({
   drawer: {
     width: "150px",
+      '&$selected': {
+        backgroundColor: 'red',
+        '&:hover': {
+          backgroundColor: 'yellow',
+        }
+      },
+    
   },
-});
+  selected:{},
+
+}));
 
 const Drawer = props => {
   const { history } = props;
+  const[click,setClick]=useState(false)
   const classes = useStyles();
   const itemsList = [
 
     {
+    
         text: "Logo",
-      icon: <img src={Logo_C} />,
-      onClick: () => (
-        history.push("/")
-      )
+        icon: <img src={Logo_C}/>,
+        onClick: () => (
+          history.push("/")
+          
+          ),
+         
     },
     {
       text: "Home",
-      icon: <img src={HomeIcon_C} />,
+      icon: <img src={HomeIcon} />,
       onClick: () => {
         history.push("/")
+        setClick(true)
+      },
+      
 
-      }
     },
     {
         text: "info",
@@ -73,15 +90,14 @@ const Drawer = props => {
   ];
   
   return (
-    <MUIDrawer variant="permanent" className={classes.drawer}>
-      <List>
+    <MUIDrawer variant="permanent" className={classes.drawer} id='Drawer'  >
+      <List class>
         {itemsList.map((item, index) => {
           const { text, icon, onClick } = item;
           return (
-            <ListItem button key={text} onClick={onClick}>
+            <ListItem button key={text} onClick={onClick} >
             {index===0 ? <ListItemIcon style={{marginBottom: "100px"}}>{icon}</ListItemIcon>:null}
-
-              {index!==0 ? <ListItemIcon  >{icon}</ListItemIcon>: null}
+            {index!==0 ? <ListItemIcon  >{icon}</ListItemIcon>: null}
             </ListItem>
           );
         })}

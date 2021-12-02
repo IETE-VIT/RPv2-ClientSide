@@ -49,7 +49,6 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setState({ ...state, open: true });
-    setErrors(validate(values));
 
     const response = await fetch(
       "https://recportal-iete.herokuapp.com/auth/register/",

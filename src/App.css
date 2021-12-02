@@ -1,127 +1,161 @@
-
 * {
-   font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
-body{
-  background-color: #050D13;
-  
+body {
+  background-color: #050d13;
 }
-.css-bshv44-MuiButtonBase-root-MuiListItem-root{
+.css-bshv44-MuiButtonBase-root-MuiListItem-root {
   margin: 25px 0 !important;
 }
-/* .MuiPaper-root{
-  background-color: rgba(77,77,77,0.2) !important;
+/* .drawer-item{
+  margin: 25px 0 !important;
 } */
 .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
-  background-color: rgba(77,77,77,0.2) !important; 
+  background-color: rgba(77, 77, 77, 0.2) !important;
 }
 
-.home{
+
+.home {
+  padding-right: 2.2%;
   width: 100%;
-  background-image: url("./images/Group\ 67.svg") ;
-    background-position: left 100px bottom 200px;
-    background-repeat: no-repeat;
+  background-image: url("./images/Group\ 67.svg");
+  background-position: left 100px bottom 200px;
+  background-repeat: no-repeat;
 }
 
-.home-heading-1{
+.home-heading-1 {
   color: white;
-  margin-top: 10% ;
+  margin-top: 10%;
   font-size: 4rem;
   line-height: 1.5;
 }
-.home-heading-2{
+.home-heading-2 {
   color: white;
-  margin-bottom: 10%  ;
+  margin-bottom: 10%;
   font-size: 4rem;
   line-height: 1.5;
 }
-.home-registration{
-  margin: 10% 7.5% ;
+.home-registration {
+  margin: 10% 7.5%;
 }
 
-.home-registration h2{
+.home-registration h2 {
   font-weight: normal;
   color: white;
   font-size: 1.5rem;
 }
-@media only screen and (min-width: 600px){
-  .take-test-button{
-    margin-bottom: 20px !important;
-    margin-top: 0 !important;
-    position: relative;
-    left: 40% !important;
-   bottom: 5% !important;
-   font-size: 5rem !important;
-  }
-}
 
-@media only screen and (max-width: 600px) {
-  .Carousel-outer-div{
-    margin-top: 50%;
-  }
-  .home-heading-1,.home-heading-2{
-    font-size: 2rem;
-  }
-  .carousel-heading{
-    font-size: 3rem;
-  }
-  
-}
 /* register here button*/
-.css-kpm0tx-MuiButtonBase-root-MuiButton-root{
+/* .css-kpm0tx-MuiButtonBase-root-MuiButton-root {
+  font-size: 1.5rem !important;
+  color: white !important;
+  margin-bottom: 1rem !important;
+} */
+.register-here{
   font-size: 1.5rem !important;
   color: white !important;
   margin-bottom: 1rem !important;
 }
-.css-kpm0tx-MuiButtonBase-root-MuiButton-root:hover{
-  background-color: #14CC7F !important;
+.register-here:hover{
+  background-color: #14cc7f !important;
 }
+/* .css-kpm0tx-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: #14cc7f !important;
+} */
 
 /*Already registered button*/
-.css-9y1egq-MuiButtonBase-root-MuiButton-root{
+/* .css-9y1egq-MuiButtonBase-root-MuiButton-root {
   margin-top: 24px !important;
-  color: #14CC7F !important;
-  border-color: #14CC7F !important;
+  color: #14cc7f !important;
+  border-color: #14cc7f !important;
   font-size: 1.2rem !important;
-}
-.registration-innerdiv{
+} */
+
+.registration-innerdiv {
   width: fit-content;
   text-align: center;
+}
+/* already registered button */
+.register-button{
+  margin-top: 24px !important;
+  color: #14cc7f !important;
+  border-color: #14cc7f !important;
+  font-size: 1.2rem !important;
+}
+.take-test-button{
+  margin-top: 24px !important;
+  color: #14cc7f !important;
+  border-color: #14cc7f !important;
+  font-size: 1.2rem !important;
 
 }
+@media only screen and (min-width: 600px) {
+  .take-test-button {
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+    position: relative;
+    left: 40% !important;
+    bottom: 5% !important;
+    font-size: 0.8rem !important;
+  }
+}
 
+@media only screen and (max-width: 600px) {
+  .home-heading-1,
+  .home-heading-2 {
+    font-size: 2rem;
+  }
+  .home{
+    background-position: left;
+  }
+  .home-heading-1{
+    margin-top: 25%;
+  }
+  .register-here{
+    font-size: 1rem !important;
+  }
+  .register-button{
+    font-size: 0.8rem !important;
 
-.quiz-heading{
-  
+  }
+  /* .css-9y1egq-MuiButtonBase-root-MuiButton-root {
+    font-size: 0.8rem !important;
+  } */
+  .home-registration h2{
+    font-size: 1rem;
+  }
+  .registration-innerdiv{
+    width: initial;
+  }
+}
+
+/* .quiz-heading {
   text-align: center;
   position: relative;
-  top: 50px;  
+  top: 50px;
   font-size: 4rem;
   color: white;
   font-weight: lighter;
 }
-#quiz-instruction-time{
+#quiz-instruction-time {
   position: relative;
   top: 100px;
 }
 .quiz-instruction-alignleft {
   color: white;
-	float: left;
-
+  float: left;
 }
 .quiz-instruction-alignright {
   color: white;
-	float: right;
+  float: right;
   position: relative;
   right: 50px;
 }
 
-.quiz-instructions-list{
-  
+.quiz-instructions-list {
   color: white;
   position: relative;
   top: 150px;
@@ -130,19 +164,14 @@ body{
   line-height: 1.5;
   list-style: none;
   text-align: left;
-  
 }
 
-.quiz-instructions-list li::before{
-    /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    /* //color: red; Change the color */
-    /* font-weight: bold; If you want it to be bold */
-    /* display: inline-block; Needed to add space between the bullet and the text */
-    /* width: 1em; Also needed for space (tweak if needed) */
-    /* margin-left: -1em; Also needed for space (tweak if needed) */
-    font-size: 200%;
-    padding-right: 5px;
-    content: "•"; color: #14CC7F;
-    display: inline-block; width: 1em;
-    margin-left: -1em
-  } 
+.quiz-instructions-list li::before {
+  
+  padding-right: 5px;
+  content: "•";
+  color: #14cc7f;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+} */

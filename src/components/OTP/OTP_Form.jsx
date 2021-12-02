@@ -41,7 +41,7 @@ const OTP_Form = () => {
     e.preventDefault();
     setState({ ...state, open: true });
 
-    setErrors(validate(values));
+    // setErrors(validate(values));
     // console.log(values);
     const response = await fetch(
       "https://recportal-iete.herokuapp.com/auth/verifyotp/",
